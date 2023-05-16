@@ -8,13 +8,12 @@
 <script>
 import TodoListItem from './TodoListItem.vue';
 
-
 export default {
     name: "TodoList",
-    components:{
+    components: {
         TodoListItem,
     },
-    computed:{
+    computed: {
         todos() {
             return this.$store.state.todos;
         }
